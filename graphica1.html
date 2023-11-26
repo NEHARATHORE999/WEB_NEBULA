@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:aliceblue;
+            height:100%;
+            width:100%;
+            margin:0;
+            
+        }
+        header{
+            background-color:black;
+            text-align:center;
+            padding:1em;
+            font-size:100px;
+            color:aliceblue;
+            font-style:italic;
+            
+            ;
+
+        }
+        .b1{
+            background-color:blueviolet;
+            width:40%;
+            color:aliceblue;
+            border-radius:3px;
+            margin-left:30%;
+            padding:3px;
+            text-align:center;
+            font-size:25px; 
+        }
+        .b2{
+            background-color:rgb(18, 164, 209);
+            width:32%;
+            border-radius:3px;
+            color:aliceblue;
+            margin-left:35%;
+            padding:3px;
+            text-align:center;
+            font-size:25px;
+        }
+        .b3{
+            background-color:blueviolet;
+            width:40%;
+            border-radius:3px;
+            margin-left:30%;
+            color:aliceblue;
+            padding:3px;
+            text-align:center;
+            font-size:25px;
+
+        }
+        .c1 {
+            display:none;
+            background-color:;
+            padding:20px;
+        }
+        .cnt1:hover .c1 {
+            display: block;
+            background-color:rgb(18, 164, 209);
+            font-size:15px;
+            width:80%;
+        }
+        .c2 {
+            display:none;
+            background-color:;
+            padding:20px;
+        }
+        .cnt2:hover .c2 {
+            display: block;
+            background-color:rgb(18, 164, 209);
+            font-size:15px;
+            width:80%;
+        }
+        .c3 {
+            display:none;
+            background-color:;
+            padding:20px;
+        }
+        .cnt3:hover .c3 {
+            display: block;
+            background-color:rgb(18, 164, 209);
+            font-size:15px;
+            width:80%;
+        }
+    
+        nav{
+            background-color:bisque;
+            margin:25px;
+            text-align:center;
+            padding:15px;
+            border-radius:45px;
+        }
+        section{
+            padding:2em;
+        }
+        footer{
+            background-color:#333;
+            color:aliceblue;
+            padding:1em;
+            text-align:center;
+            bottom:0;
+            width:100%;
+        }
+        .cnt1{
+            background-color:blueviolet;
+            color:azure;
+            padding:1em;
+            border-radius:10px;
+            margin-left:5px;
+            width:30%;
+        }
+        .cnt2{
+            background-color:blueviolet;
+            color:azure;
+            padding:1em;
+            border-radius:10px;
+            margin-left:5px;
+            width:30%;
+        }
+        .cnt3{
+            background-color:blueviolet;
+            color:azure;
+            padding:1em;
+            border-radius:10px;
+            margin-left:5px;
+            width:30%;
+        }
+        .model{
+            width:50%;
+            font-size:32px;
+            font-weight:bold;
+            text-align:center;
+            padding:40px;
+            border:50px double rgb(18, 164, 209) ;
+            margin:50px;
+            margin-left:20%;
+        }
+        .main{
+            display:flex ;
+        }
+        .violet{
+            background-color: violet;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .red{
+            background-color: red;
+        }
+        .container{
+            display: flex;
+            gap:10px;
+            border: 1px solid black;
+            background-color: black;
+            width: 2000px;
+            height: 1500px;
+        }
+        .container>*{
+            width:90px;
+            height:400px;
+            flex-basis: 200px;
+        }
+        .violet{
+            order: 2;
+           display: flex;
+
+        }
+        .blue{
+            order: 1;
+            display: flex;
+        }
+        .green{
+            order: 3;
+            display: flex;
+            
+        }
+        .yellow{
+            order:4;
+            display: flex;
+            font-display: auto;
+        }
+        .orange{
+            display:flex;
+            font-display: auto;
+            order:6;
+
+        }
+        .red{
+            order: 5;
+            display: flex;
+            font-display: auto;
+        }
+        .container{
+            /* justify-content:flex-start; */
+            /* /* justify-content:flex-end; */
+            /*justify-content:space-between; */
+             justify-content: space-around; */
+           
+        }
+        .container{
+            display: flex;
+            align-items:flex-end;
+            height:500px;
+        }
+        /* .container{
+            flex-wrap: nowrap;
+        } */
+        .container{
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        PerkLife
+    </header>
+    <img src="gr23.png" height=100% width=100% alt="Error">
+    <div class="main">
+    <div class="cnt1"> <b>Dr. Mark Cucuzzella</b><p class="c1"><b>Dr. Mark Cucuzzella practices family medicine at WVU's Jefferson Medical Center. He is a founding
+         member of The Society of Metabolic Health Practitioners, and is the author of “Run For Your Life,” which summarizes the science and the soul of running, nutrition and physical activity for maintaining vigorous life.</b></p></div><br>
+    <div class="cnt2"><b> Louis J. Aronne</b><p class="c2"><b>Louis J. Aronne, MD, FACP is a leading authority on obesity and its treatment. He is the Sanford I. Weill Professor of Metabolic Research at Weill-Cornell Medical College and directs the Center for Weight Management and Metabolic Clinical Research, a state-of-the-art, multidisciplinary obesity research and treatment program.</b></p></div>
+    <div class="cnt3"><b> Katherine Beals</b><p class="c3"><b>Katherine Beals is an associate clinical professor in the department of Nutrition and Integrative Physiology at the University of Utah. Her areas of expertise include sport nutrition, weight management, macronutrient metabolism (particularly carbohydrate and protein metabolism) and micronutrient metabolism</b></p></div>
+    </div>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#workouts">Workouts</a> |
+        <a href="#nutrition">Nutrition</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="b1">Rely on Yourself</div><br>
+    <div class="b2">Instead Of</div><br>
+    <div class="b3">Medicine</div>
+    <div class="model">Welcome to Your Fitness Site!</div>
+
+    <section id="home">
+        <h2>Importance</h2>
+        <p>Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.
+            Adults who sit less and do any amount of moderate-to-vigorous physical activity gain some health benefits. Only a few lifestyle choices have as large an impact on your health as physical activity.
+            Everyone can experience the health benefits of physical activity – age, abilities, ethnicity, shape, or size do not matter.</p>
+    </section>
+
+    <section id="workouts">
+        <h2>Workout Routines</h2>
+        <img src="gr.jpg" height="300px" width="500px" alt="error">
+        <p>Creating a daily work routine that promotes a healthy lifestyle involves a balance of physical activity, mental well-being, proper nutrition, and sufficient rest. Here's a sample daily routine that you can customize based on your individual needs and preferences:<br>
+
+            Morning Routine:<br>
+            Wake Up Early:<br>
+            
+            Aim for 7-8 hours of sleep each night.
+            Establish a consistent wake-up time.<br>
+            Hydrate:<br>
+            
+            Drink a glass of water to rehydrate your body.<br>
+            Exercise:<br>
+            
+            Engage in 30 minutes of physical activity, such as jogging, yoga, or a workout routine.<br>
+            Healthy Breakfast:<br>
+            
+            Consume a nutritious breakfast with a balance of proteins, carbs, and fats.<br>
+            Mindfulness Practice:<br>
+            <img src="17.jpg" height="500px" width="300px" alt="error">
+            <br>
+            Spend 10-15 minutes on mindfulness or meditation to center yourself for the day.<br>
+            Work/Study Hours:<br>
+            Structured Work Time:<br>
+            
+            Plan your work or study tasks in blocks with short breaks.
+            Use productivity techniques like the Pomodoro Technique.<br>
+            Stay Hydrated:<br>
+            
+            Drink water throughout the day to stay hydrated.<br>
+            Healthy Snacks:<br>
+            
+            Consume nutritious snacks to maintain energy levels.<br>
+            Afternoon Break:<br>
+            Lunch:<br>
+            
+            Eat a balanced and healthy lunch.<br>
+            Short Walk or Stretch:<br>
+            
+            Take a brief walk or do stretching exercises to refresh your mind.<br>
+            Evening Routine:<br>
+            Work/Study Wrap-up:<br>
+            
+            Complete your work or study tasks for the day.<br>
+            Dinner:<br>
+            
+            Have a well-balanced dinner with lean proteins, vegetables, and whole grains.<br>
+            Family/Leisure Time:<br>
+            
+            Spend quality time with family or engage in leisure activities you enjoy.<br>
+            Screen Time Limit:<br>
+            
+            Limit screen time before bedtime to promote better sleep.<br>
+            Night Routine:<br>
+            Wind Down:<br>
+            
+            Engage in relaxing activities like reading or listening to calming music.<br>
+            Digital Detox:<br>
+            
+            Reduce exposure to screens at least an hour before bedtime.<br>
+            Sleep Preparation:<br>
+            
+            Create a comfortable sleep environment.<br>
+            Aim for a consistent sleep schedule.<br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LhL5SNZfnQs?si=d9TeVhEz0P6x63zH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <a href="https://www.planetfitness.com/" target="_blank">For More</a>
+        </p>
+    </section>
+
+    <section id="nutrition">
+        <h2>Nutrition Tips</h2>
+        <img src="gr2.jpg" height="300px" width="500px" alt="error">
+        <p>1. <b>Variety of Nutrient-Dense Foods:</b><br>
+            Include a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats in your diet.
+            Different foods provide different essential nutrients, so aim for a diverse range.<br><br>
+            2.<b>Portion Control:</b><br>
+            Be mindful of portion sizes to avoid overeating.
+            Use smaller plates to help with portion control.<br><br>
+            3.<b>Hydration:</b><br>
+            Drink plenty of water throughout the day.
+            Limit sugary drinks and excessive caffeine intake.<br><br>
+            4. <b>Whole Grains:</b><br>
+            Choose whole grains such as brown rice, quinoa, oats, and whole wheat over refined grains.<br><br>
+            5. <b>Lean Proteins:</b><br>
+            Include sources of lean protein in your diet, such as poultry, fish, tofu, legumes, and low-fat dairy.
+            Limit red meat consumption and choose lean cuts.<br><br>
+            6.<b>Healthy Fats:</b><br>
+            Incorporate sources of healthy fats, like avocados, nuts, seeds, and olive oil.
+            Limit saturated and trans fats found in processed and fried foods.<br><br>
+            7. <b>Fruits and Vegetables:</b><br>
+            Aim for a colorful mix of fruits and vegetables, as different colors indicate different nutrients.
+            Opt for whole fruits over fruit juices for added fiber.<br><br>
+            8.<b>Limit Added Sugars and Salt:</b>Limit Added Sugars and Salt:<br>
+            Minimize the intake of foods and beverages high in added sugars.
+            Limit salt intake and choose herbs and spices for flavoring.<br><br>
+            9.<b>Dairy or Dairy Alternatives:</b><br>
+            Include sources of calcium and vitamin D, such as low-fat dairy or fortified plant-based alternatives.<br><br>
+            10.<b>Moderation and Balance:</b><br>
+            Enjoy treats in moderation to avoid feeling deprived.
+            Aim for a balanced distribution of macronutrients (carbohydrates, proteins, and fats).<br><br>
+            11.<b>Meal Timing:</b><br>
+            Eat regular meals and snacks to maintain energy levels throughout the day.
+            Avoid skipping meals, especially breakfast.
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fIQXWTt57WQ?si=YBlsx7pZihTHSOlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+    </section>
+    <h3>" Fighting diseases"</h3>
+    <div class="univ">
+        <div class="container">
+            <div class="violet">5.<b>Heart Disease:</b><br> 
+                Cardiovascular exercise such as running, walking, swimming, biking, and some forms of HIIT require the heart to pump and work hard. This preserves heart function and promotes a healthy weight, which is a leading determinant of the aforementioned conditions.</div>
+            <div class="blue">6.<b>Osteopenia and Osteoporosis:</b><br>
+
+                Osteopenia and osteoporosis involve weakness of the bones and thus, muscle to some extent. Although somewhat counterintuitive, regular weight-bearing exercise is the single best way to prevent loss of bone mass.
+                </div>
+            <div class="green">4.<b> Obesity and Metabolic Syndrome:</b><br>
+              Exercise burns energy from carbohydrates and fat, thus, discouraging the storage of energy as fat. Alongside a nutritionally adequate diet, exercise is one of the best ways to avoid metabolic syndrome (a conglomeration of pre-diseased states) and obesity.</div>
+            <div class="yellow">3.<b>Depression:</b><br>
+
+                Consistent exercise has been shown to effectively help treat depression. It can also be utilized to proactively prevent it or at least, reduce the severity of the experience.
+                </div>
+            <div class="orange">1.<b>Asthma:</b><br>
+
+                Similar to osteopenia and osteoporosis mentioned above, it may seem illogical that exercise, an acute lung stressor, can prevent asthma. 
+                
+                 As with tearing muscles through exercise, acute stress to the lungs allows them to build and repair even better.</div>
+            <div class="red">2. <b>Arthritis:</b><br>
+
+                Some people are born with arthritis, and while such a factor is unpreventable, exercise can certainly help manage arthritic symptoms. 
+                Opportunely, regular exercise can help prevent it by keeping muscles surrounding joints strong. </div>
+        </div>
+    </div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+    </section>
+
+    <footer>
+        <p> &copy;2023 Your Fitness Site</p>
+    </footer>
+</body>
+</html>
